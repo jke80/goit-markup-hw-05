@@ -62,7 +62,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -127,29 +129,40 @@
         <div class="container">
           <h2 class="box-title">Чим ми займаємося</h2>
           <ul class="list">
-            <li>
+            <li class="box-list-item">
               <img
                 src="./images/img1.jpg"
-                alt="Веб-сайти"
+                alt="Руки розробника на клавіатурі"
                 width="370"
                 class="no-gap"
               />
+              <div>
+                <p>Десктопні додатки</p>
+              </div>
             </li>
-            <li>
+            <li class="box-list-item">
               <img
                 src="./images/img2.jpg"
-                alt="Мобільні застосунки"
+                alt="Жіноча рука тримає мобільний телефон"
                 width="370"
                 class="no-gap"
               />
+              <div>
+                <p>Мобільні додатки</p>
+              </div>
+              
             </li>
-            <li>
+            <li class="box-list-item">
               <img
                 src="./images/img3.jpg"
-                alt="Дизайн"
+                alt="Дизайнер працює за комп'ютером"
                 width="370"
                 class="no-gap"
               />
+              <div>
+                <p>Дизайнерські рішення</p>
+              </div>
+              
             </li>
           </ul>
         </div>
@@ -453,5 +466,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg width="18" height="18">
+            <use href="./images/sprite.svg#close-black-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
